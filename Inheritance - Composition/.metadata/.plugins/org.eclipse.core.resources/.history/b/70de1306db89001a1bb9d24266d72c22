@@ -1,0 +1,25 @@
+package com.shivani.service;
+
+public class TestInheritance {
+	public static void main(String[] args) {
+	 
+		Parent p = new Parent();
+		p.m1();
+		p.marry();
+		
+		
+		Child c = new Child();
+		c.m1();
+		c.m2();
+		c.marry();
+		
+		
+		//In overriding method resolution always take care by jvm based on runtime object.
+		//Hence overrding is also known as run time polymorphism
+		Parent p1 = new Child();
+		p1.marry();
+		
+		
+	}
+}
+

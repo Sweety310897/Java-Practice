@@ -1,0 +1,7 @@
+package com.shivani.service;
+
+public abstract class Shape extends Parent {
+	public abstract void m1() {
+		System.out.println("Iam in abstract");
+	}
+}

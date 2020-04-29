@@ -1,0 +1,9 @@
+package com.shivani.service;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+public class ConsoleReader {
+	private static final Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+	public static void main(String[] args) {
+		logger.log(Level.FINE, "----------------------------------------------------");
+	}
+}

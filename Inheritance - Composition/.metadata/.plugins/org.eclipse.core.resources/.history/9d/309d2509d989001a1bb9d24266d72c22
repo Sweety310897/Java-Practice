@@ -1,0 +1,22 @@
+package com.shivani.service;
+
+public class TestInheritance {
+
+	//to demonstrate inheritance
+	public static void main(String[] args) {
+		Parent p =new Parent();
+		p.m1();
+	
+		Child c = new Child();
+		c.m1();
+		
+		
+	// Parent class reference can be used to hold child class object. It is polymorphism concept. 
+	// We cant call child methods, we can call only parent methods because  
+		Parent  p1 = new Child();
+		p1.m1();
+	//	p1.m2(); parent refere
+	
+	
+	}
+}

@@ -1,0 +1,9 @@
+package com.shivani.service;
+
+public class TestInheritance {
+
+	//to demonstrate
+	Parent p =new Parent();
+	p.m1();
+	
+}

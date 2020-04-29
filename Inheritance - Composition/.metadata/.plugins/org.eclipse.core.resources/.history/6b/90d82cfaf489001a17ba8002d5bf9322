@@ -1,0 +1,74 @@
+package com.shivani.service;
+
+public class TestComposition {
+	public static void main(String[] args) {
+		MurderRobotDog m = new MurderRobotDog();
+		m.bark();
+		m.kill();
+		m.drive();
+	}
+}
+class Robot {
+	public void drive() {
+		System.out.println("MurderRobot drive");
+	}
+}
+class MurderRobot extends Robot{
+	
+	public void kill() {
+		System.out.println("kill");
+	}
+
+}
+
+
+class CleaningRobot extends Robot{
+	Robot r;
+	public void clean() {
+		System.out.println("clean");
+	}
+}
+
+
+class MurderRobotDog {
+	Dog d;
+	MurderRobot r;
+	MurderRobotDog() {
+		r = new MurderRobot();
+		d = new Dog();
+		
+	}
+	public void bark() {
+		d.bark();
+	}
+	public void kill() {
+		r.kill();
+	}
+	public void drive() {
+		r.drive();
+	}
+}
+
+class Animal {
+	public void eat() {
+		System.out.println("Animal is eat");
+	}
+}
+class Dog extends Animal{
+	public void bark() {
+		System.out.println("dog is barking");
+	}
+}
+class Cat extends Animal{
+	public void meow() {
+		System.out.println("cat is meow");
+	}
+}
+
+// Murderrobot dog can kill drive and cant eat
+
+//dog = eat + bark
+//cat = eat+meow
+//cleaningrobot = drive + clean
+//murderrobot = drive + kill
+//murderrobotdog = drive+ kill+bark

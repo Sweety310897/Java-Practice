@@ -1,0 +1,12 @@
+package com.shivani.service;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+public class ConsoleReader {
+	private static final Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+//	public static void main(String[] args) {
+//		System.out.print("hi");
+//		logger.log(Level.INFO, "Press 1 to read from Console\n"
+//				+ "Press 2 to read from File\n"
+//				+ "Press 3 to read from propeties file\n");
+//	}
+}

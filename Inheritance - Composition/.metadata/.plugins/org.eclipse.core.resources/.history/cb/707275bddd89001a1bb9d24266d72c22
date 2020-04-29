@@ -1,0 +1,42 @@
+package com.shivani.service;
+
+public class TestInheritance {
+	public static void main(String[] args) {
+	 
+		Parent p = new Parent();
+		p.m1(); //Parent
+		p.marry(); //married to Sita
+		
+		Child c = new Child();
+		c.m1(); //Parent
+		c.m2(); //Child
+		c.marry(); //Married to gita
+		
+		//In overriding method resolution always take care by jvm based on runtime object.
+		//Hence overrding is also known as run time polymorphism
+		Parent p1 = new Child();
+		p1.marry(); //Married to gita
+		
+		
+		//For overriding same method names and arg types. Return types were considered only till 1.4, later
+		//covariant types were introduced which were used for overriding
+		p.checkForReturn(); //object return type
+		c.checkForReturn(); //String return type
+		p1.checkForReturn(); //String return type
+		
+		
+		//overriding not applicable for private methods.
+		//If we have checkForPrivate method in Child class then its valid but its not overriding happened
+		
+		
+		//If Parent class method is final cannot be overridden
+		
+		//We can override non abstract methods as abstract
+		//It is helpful to stop the availability of parent methods implementation to the
+		//next child level.
+		
+		
+	
+	}
+}
+

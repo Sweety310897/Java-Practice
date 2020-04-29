@@ -1,0 +1,7 @@
+package com.shivani.service;
+
+public class TestInheritance {
+	public static void main(String[] args) {
+		System.out.print("hi");
+	}
+}

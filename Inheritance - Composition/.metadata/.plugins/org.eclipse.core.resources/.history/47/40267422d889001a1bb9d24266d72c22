@@ -1,0 +1,8 @@
+package com.shivani.service;
+
+public class Child  extends Parent{
+
+	public void m1() {
+		System.out.print("child");
+	}
+}

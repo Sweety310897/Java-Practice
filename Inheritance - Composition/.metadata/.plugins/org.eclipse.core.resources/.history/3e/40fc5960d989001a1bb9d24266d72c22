@@ -1,0 +1,7 @@
+package com.shivani.service;
+
+public class Parent {
+	public void m1() {
+		System.out.print("Parent ");
+	}
+}

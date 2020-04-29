@@ -1,0 +1,12 @@
+package com.shivani.service;
+
+public class Child extends Parent{
+	public void m2() {
+		System.out.println("Parent ");
+	}
+	public void marry() {
+
+		System.out.println("Gita");
+		
+	}
+}

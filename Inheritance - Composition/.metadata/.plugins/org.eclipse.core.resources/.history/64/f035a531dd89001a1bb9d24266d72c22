@@ -1,0 +1,16 @@
+package com.shivani.service;
+
+abstract class Shape extends Parent {
+	public abstract void m1();
+}
+
+class Temp extends Shape {
+
+	@Override
+	public void m1() {
+		// TODO Auto-generated method stub
+		System.out.println("Iam new Implementation of method 1");
+		
+	}
+	
+}
